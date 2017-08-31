@@ -43,7 +43,7 @@ def load_dataset():
 
 def format_labels(labels):
     """
-    教師ラベルをonehotベクトルに変換
+    教師ラベルをシリアル変換
     category_list:カテゴリの位置に対応した名称を保存
     """
     # カテゴリ名取得、シリアル変換
