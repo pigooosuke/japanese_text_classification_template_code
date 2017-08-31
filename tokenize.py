@@ -36,7 +36,7 @@ def extract_word(text):
         skip = 0
         # NG ワード確認
         if node.surface in NG_WORDS:
-            is_main_word = 0
+            is_main_word_before_word = 0
         else:
             # 内容語抽出
             if node.feature.split(",")[0] in ["名詞","動詞","形容詞"] and node.feature.split(",")[1] != "数":
