@@ -1,8 +1,8 @@
 # japanese nlp template code
 
-日本語解析のための素性抽出テンプレート(MeCab,Cabochaが必要)
-The template code to extract word-features of Japanese texts.
-To run this scripts, you need to install "MeCab" & "Cabocha".
+日本語解析のための素性抽出テンプレート(MeCab,Cabochaが必要)  
+The template code to extract word-features of Japanese texts.  
+To run this scripts, you need to install "MeCab" & "Cabocha".  
 
 ## tokenize.py
 
@@ -10,7 +10,7 @@ To run this scripts, you need to install "MeCab" & "Cabocha".
 + 名詞句（名詞が続く）
 + 内容語が含まれるbi-gram
 + 係り受け（名詞-動詞）
-を抽出する
+を抽出する  
 (不要語を置換するなどの前処理は事前に行ってください)
 
 you can extract
@@ -22,12 +22,12 @@ you can extract
 
 ## classification.py
 
-文書の教師あり分類のテンプレート。
-TFIDF から ロジスティック回帰を行う。
-グリッドサーチを設定することでチューニングが可能
-入力: スペースで単語を区切ったテキスト
+文書の教師あり分類のテンプレート。  
+TFIDF から ロジスティック回帰を行う。  
+グリッドサーチを設定することでチューニングが可能  
+入力: スペースで単語を区切ったテキスト  
 
-the template for supervised text classification.
-this script performs the pipline from tf-idf to logistic regression.
-And, you can do tuning through  Grid Search.
-Input: words separated by space
+the template for supervised text classification.  
+this script performs the pipline from tf-idf to logistic regression.  
+And, you can do tuning through  Grid Search.  
+Input: words separated by space  
